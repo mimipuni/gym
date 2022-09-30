@@ -275,7 +275,7 @@ header {
 
 /*キャッチ*/
 .catch {
-    background-image: url(../img/back-head.jpg);
+    background-image: url(https://mimipuni.github.io/gym/img/back-head.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -342,7 +342,7 @@ header {
 }
 
 .campaign:before {
-    content: url(../img/back-cp1.png);
+    content: url(https://mimipuni.github.io/gym/img/back-cp1.png);
     position: absolute;
     left:0;
     top:10px;
@@ -350,7 +350,7 @@ header {
 }
 
 .campaign:after {
-    content: url(../img/back-cp2.png);
+    content: url(https://mimipuni.github.io/gym/img/back-cp2.png);
     position: absolute;
     right: 0;
     bottom: 0;
