@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-spacial=1.0">
+
+        <title>Academic GYM</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/a54bc03ffd.js" crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+                integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+                crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            $(function() {
+                $("#mobile-navigation").hide();
+                $(".menu-trigger").on("click",function(){
+                    $("#mobile-navigation").slideToggle("fast");
+                    $(this).toggleClass("active");
+                    return false;
+                });
+            });
+
+            $(function() {
+                $(".mobile-nav > ul > li > ul").hide();
+                $(".sub-open > a").on("click",function(){
+                    $(this).parent().children("ul").slideToggle("fast");
+                    $(this).parent().toggleClass("active");
+                    return false;
+                });
+            });
+        </script>
+
+    </head>
+
+    <body>
+        <header>
+            <div class="top-bar">
+                <div class="content">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="ロゴ">
+                    </div>
+                </div>
+
+                <div class="sp-menu-btn hide-pc">
+                    <a href="#" class="menu-trigger active">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+
+
+            <!--スマートフォン用メニュー　-->
+            <nav id="mobile-navigation" class="mobile-nav hide-pc">
+                <ul >
+                    <li class="sub-open"><a href="#">店舗検索</a>
+                        <ul>
+                            <li><a href="#">北海道・東北</a></li>
+                            <li><a href="#">関東</a></li>
+                            <li><a href="#">中部</a></li>
+                            <li><a href="#">関西</a></li>
+                            <li><a href="#">中国・四国</a></li>
+                            <li><a href="#">九州・沖縄</a></li>
+                            <li><a href="#">海外</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="sub-open"><a href="#">Academic Gymとは</a>
+                        <ul>
+                            <li><a href="#">トレーニングについて</a></li>
+                            <li><a href="#">食療科学の力</a></li>
+                            <li><a href="#">パーソナルサポート</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="sub-open"><a href="#">入会•見学</a>       
+                        <ul>
+                            <li><a href="#">Web入会予約</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="sub-open"><a href="#">プログラム</a>
+                        <ul>
+                            <li><a href="#">初心者サポート</a></li>
+                            <li><a href="#">スタジオプログラム</a></li>
+                            <li><a href="#">スタジオスケジュール</a></li>
+                            <li><a href="#">食療科学セミナー</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">ショップ</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>
+
+            </nav>
+
+
+            <!--PC用メニュー　-->
+            <div class="navigation hide-sp">
+                <div class="content">
+
+                    <nav class="main-nav">
+                        <ul >
+                            <li ><a href="#">店舗検索</a>
+                                <ul>
+                                    <li><a href="#">北海道・東北</a></li>
+                                    <li><a href="#">関東</a></li>
+                                    <li><a href="#">中部</a></li>
+                                    <li><a href="#">関西</a></li>
+                                    <li><a href="#">中国・四国</a></li>
+                                    <li><a href="#">九州・沖縄</a></li>
+                                    <li><a href="#">海外</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Academic Gymとは</a>
+                                <ul>
+                                    <li><a href="#">トレーニングについて</a></li>
+                                    <li><a href="#">食療科学の力</a></li>
+                                    <li><a href="#">パーソナルサポート</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">入会•見学</a>       
+                                <ul>
+                                    <li><a href="#">Web入会予約</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">プログラム</a>
+                                <ul>
+                                    <li><a href="#">初心者サポート</a></li>
+                                    <li><a href="#">スタジオプログラム</a></li>
+                                    <li><a href="#">スタジオスケジュール</a></li>
+                                    <li><a href="#">食療科学セミナー</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">ショップ</a></li>
+                            <li><a href="#">お問い合わせ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="catch">
+                <div class="content">
+                    <div class="head-message">
+                        <p class="text-center">
+                        <img src="img/logo_w.png" alt="Academic GYM">
+                        </p>
+                        <p>
+                        世界トップレベルのトレーニング設備に、最新の科学を取り入れあなたのカラダづくりを徹底サポート。世界12か国・300カ所以上・200万人の会員数を誇る世界有数のフィットネスクラブです。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </header>
+
+
+        <!--メインコンテンツ-->
+        <div class="content">
+            <div class="campaign">
+                <p><img src="img/campaign.png" alt="春のキャンペーン">
+                <p>
+                
+                    <a href="#" class="btn-campaign">詳しくはこちら</a>
+                </p>
+            </div>
+
+            <div class="main-content">
+                <section class="news">
+                    <h2>ニュース<span>News</span></h2>
+
+                    <dl class="clearfix">
+                        <dt><a href="#"><img src="img/no-img.png" alt="no-img"></a></dt>
+                        <dd>
+                            <h3><a href="#">春の入会キャンペーン実施中！3月25日～4月9日に入会された方は…</a></h3>
+                            <p class="meta">2064-3-24</p>
+                        </dd>
+
+                        <dt><a href="#"><img src="img/no-img.png" alt="no-img"></a></dt>
+                        <dd>
+                            <h3><a href="#">サンプルニュース記事</a></h3>
+                            <p class="meta">2064-3-24</p>
+                        </dd>
+
+                        <dt><a href="#"><img src="img/no-img.png" alt="no-img"></a></dt>
+                        <dd>
+                            <h3><a href="#">サンプルニュース記事</a></h3>
+                            <p class="meta">2064-3-24</p>
+                        </dd>
+                    </dl>
+
+                    <p class = "text-center">
+                        <a href="#" class="btn-more">もっと見る</a>
+                    </p>
+
+                </section>
+
+
+                <section class="join-us">
+                    <h2>入会・施設見学<span>Join us!!</span></h2>
+                    <p>
+                        当クラブでは毎日ご入会・見学を受け付けております。<br>
+                        ご入会いただいた日から全ての施設がご利用できますので、<br>
+                        まずはお気軽にお近くの店舗までお越しください。
+                    </p>
+
+                    <h3>店舗で入会</h3>
+                    <dl class="clearfix">
+                        <dt><img src="img/join-1.png" alt="店舗で入会"></dt>
+                        <dd>
+                            <p>
+                                ご入会・見学の際は、直接お近くの店舗までご来店ください。<br>
+                                その場ですぐに入会手続きは完了し、その日から施設をご利用いただけます。
+                            </p>
+                            <p class="text-center">
+                                <a href="#">詳しく見る <i class="fa-sharp fa-solid fa-angle-right"></i></a>
+                            </p>
+                        </dd>
+                    </dl>
+
+                    <h3>Webから入会予約</h3>
+                    <dl class="clearfix">
+                        <dt><img src="img/join-pc.png" alt="Webから入会予約"></dt>
+                        <dd>
+                            <p>
+                                あらかじめWebから予約していただきますと、店舗での入会手続きをスムーズに進みます。
+                            </p>
+                            <p class="text-center">
+                                <a href="#">詳しく見る <i class="fa-sharp fa-solid fa-angle-right"></i></a>
+                            </p>
+                        </dd>
+                    </dl>
+                    
+                </section>
+
+                <section>
+                    <h2>プログラム<span>program</span></h2>
+
+                    <h3>スタジオプログラム</h3>
+
+                    <img src="img/studio.jpg" alt="スタジオプログラム">
+
+                    <p>
+                        初心者から上級者まで、幅広いレベルに合わせたプログラムをご用意しております。ヨガ、ピラテス、ストレッチ、リラクゼーションから、格闘技の要素を取り入れたコンバットトレーニング、ファイトアクション、等さまざまなものがあります。詳しくはスタジオプログラム概要、およびスタジオスケジュールをご覧ください。
+                    </p>
+
+                    <p class="text-center">
+                        <a href="#" class="btn-program">プログラム概要</a>
+                        <a href="#" class="btn-schedule">スタジオスケジュール</a>
+                    </p>
+
+                    <h3>食療科学講座</h3>
+
+                    <img src="img/food.jpg" alt="食療科学講座">
+
+                    <p>
+                        Academic Gymでは毎週栄養士を招いて食事に関するセミナーを開催しています。健康なカラダづくりに食事はとても大切です。栄養学の基礎から、個人の目的に応じた食事のカウンセリングまで行っています。(※一部有料)
+                    </p>
+
+                    <p class="text-center">
+                        <a href="#" class="btn-more">食療セミナーについて</a>
+                    </p>
+                    
+                </section>
+
+                <section>
+                    <h2>ショップ<span>shop</span></h2>
+
+                    <img src="img/sale.png" alt="春の応援セール">
+
+                    <p>
+                        Academic Gymにはみなさんのトレーニングをサポートするグッズを豊富に揃えております。
+                    </p>
+
+                    <p>
+                        一流のアスリートも使用しているプロテインやサプリメント、
+                        当ジムオリジナルのトレーニングギアやシューズもございます。
+                    </p>
+
+                    <p>
+                        サプリメントやプロテインに関しては専門のスタッフが常駐しておりますので、みなさんのご要望をお伺いしながらオススメさせて頂いております。
+                        ぜひ一度店舗のショップエリアにお越しください！！
+                    </p>
+
+                    <p class="text-center">
+                        <a href="#" class="btn-shop">オンラインショップ<br><span>はこちら</span></a>
+                    </p>
+
+                </section>
+
+            </div>
+            <!--main-content END-->
+
+            <div class="about-gym">
+                <p class="text-center">
+                    <img src="img/about-gym.png" alt="Academic GYMとは" class="about-title">
+                </p>
+
+                <section>
+                    <img src="img/about-1.png" alt="about-1" class ="about1">
+
+                    <article class="article1">
+                        <h2>理想的な体を手に入れる</h2>
+
+                        <p>
+                            それが我々のミッションです。
+                        </p>
+
+                        <p>
+                            あなたの目標達成をトータルでサポートします。
+                        </p>
+ 
+                        <p>
+                            健康のためにダイエットしたい。
+                            若いころのように体力を身に着けたい。
+                            ムキムキになって自信を手に入れたい。
+                            スポーツのパフォーマンスを上げたい。
+                        </p>
+
+                        <p>
+                            あなたの理想は何ですか？
+                        </p>
+
+                    </article>
+                </section>
+
+                <section>
+                    <img src="img/about-2.png" alt="about-2" class ="about2">
+
+                    <article class="article2">
+                        <h2>あなただけのトレーニングを</h2>
+
+                        <p>
+                            人はそれぞれ個性があります。
+                            全く同じ人なんて存在しません。
+                        </p>
+
+                        <p>
+                            だったらトレーニングも人によって異なるはず。
+                        </p>
+
+                        <p>
+                            Academic GYMではすべてのお客様に専門家によるカウンセリングを実施し、あなただけのトレーニングメニューを作成します。
+                        </p>
+
+                    </article>
+                </section>
+
+                <section>
+                    <img src="img/about-3.png" alt="about-3" class ="about3">
+
+                    <article class="article3">
+                        <h2>トレーニング ＋ 食療科学</h2>
+
+                        <p>
+                            とにかく鍛えればムキムキになる
+                            食べなければダイエットできる
+                        </p>
+                        
+                        <p>
+                            そんな時代は終わりました。
+                        </p>
+                        
+                        <p>
+                            あなたの理想のボディを手に入れるには、
+                            食事もトレーニングもどちらも大切。
+                        </p>
+                        
+                        <p>
+                            Academic GYMではジムでのトレーニングだけでなく、日頃の食生活もサポート。
+                            専属の栄養士や専門家と一緒にあなたの生活習慣から改善していきましょう。
+                        </p>
+
+                    </article>
+
+                    <img src="img/about-4.png" alt="about-4" class ="about4">
+
+                </section>
+
+                <section class="about-bottom">
+                    <p class="about-join">
+                        さぁ、一緒にはじめましょう！
+                    </p>
+
+                    <p class="text-center">
+                        <a href ="#" class="btn-entry">入会•見学はこちら</a>
+                    </p>
+                </section>
+
+            </div>
+            <!--about-gym END-->
+
+            <div class="relations">
+                <section>
+                    <h2>関連情報<span>another information</span></h2>
+
+                <ul>
+                    <li><a href="#"><span></span>採用情報</a></li>
+                    <li><a href="#"><span></span>栄養の学校</a></li>
+                    <li><a href="#"><span></span>アルバイト募集</a></li>
+                    <li><a href="#"><span></span>有料スクール</a></li>
+                    <li><a href="#"><span></span>Academic GYM オフィシャルサポート</a></li>
+                </ul>
+            </section>
+            </div>
+
+        </div>
+        <!--メインコンテンツ　おわり-->
+        
+        <!--フッター　-->
+        <footer>
+            <div class="site-map">
+                <div class="content">
+                    <ul>
+                        <li><a href="#">会社概要</a></li>
+                        <li><a href="#">プライバシー・ポリシー</a></li>
+                        <li><a href="#">コンプライアンス情報</a></li>
+                        <li><a href="#">IR情報</a></li>
+                        <li><a href="#">個人情報保護方針</a></li>
+                        <li><a href="#">当サイトに関するご意見・ご要望</a></li>
+                        <li><a href="#">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bar">
+                &copy;2064 Academic GYM international .inc
+
+            </div>
+        </footer>
+
+
+
+    </body>
+
+
+
+
+</html>
